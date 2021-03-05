@@ -1,0 +1,29 @@
+body, html{
+    background-color: #fff;
+    height:100%;
+
+}
+
+.navbar-custom{
+    background-color: #9C359F;
+}
+.navbar-brand{
+    border-right: 1px solid black;
+    padding: 20px;
+}
+
+.container-fluid{
+    width:90%;
+    height: 90%;
+    padding:5%;
+    position: relative;
+}
+.Content{
+    width:100%;
+    height: 100%;
+    overflow:auto;
+    background:#cccccc;
+}
+#notif{
+    background:#cccccc;
+}

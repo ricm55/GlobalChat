@@ -1,0 +1,20 @@
+
+<%- include('layout'); -%>
+<html>
+<body>
+    <div class="container-fluid" id="chat">
+        <div class="Content" id="msg"></div>
+        <div id="notif"></div>
+        <form id="form">
+            <div class="input-group mb-3">
+                <input id="input" type="text" class="form-control" placeholder="Write something nice!" aria-label="Write something nice!">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+</body>
+</html>
