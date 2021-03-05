@@ -13,10 +13,12 @@ body, html{
 }
 
 .container-fluid{
-    width:90%;
+    width: 90%;
     height: 90%;
     padding:5%;
     position: relative;
+    display: flex;
+    flex-direction:column;
 }
 .Content{
     width:100%;

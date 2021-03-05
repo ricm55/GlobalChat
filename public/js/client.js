@@ -1,3 +1,4 @@
+
 username = prompt('Who are you?');
 if (!username)
     username = 'Anonymous';
@@ -15,8 +16,8 @@ var idNotif = 0;
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     if(input.value){
-        socket.emit('message', {'username':username, 'message':input.value});
-        addMessage(username + ': ' + input.value);
+        socket.emit('message', {'username':username, 'message':filterXSS(input.value)});
+        addMessage(username + ': ' + filterXSS(input.value));
         input.value='';
     }
 });
