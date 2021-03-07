@@ -3,7 +3,11 @@ username = prompt('Who are you?');
 if (!username)
     username = 'Anonymous';
 //connecting the client
-var socket = io();
+
+//var socket = io('ws://' + location.host + '/ws/');
+//var socket = io();
+//var socket = io.connect('https://marcantoinericard.com', {secure: true});
+var socket = io.connect('ws://' + location.host);
 socket.emit('newUser',username);
 
 var chat = document.getElementById('msg');
